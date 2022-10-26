@@ -1,0 +1,19 @@
+#1In this SQL, I created my own store by selling 5 different types of clothing articles. The table includes 5 columns (i.e., shirt, pants, dress, jacket, and socks) and a total of 115 articles.
+I'm querying a database to illustrate clothing articles ordered by prices in ascedning order. 
+
+CREATE TABLE clothing 
+(ID INTEGER PRIMARY KEY,
+Name Text,
+Quantity INTEGER,
+Prices Numeric);
+
+INSERT INTO clothing VALUES (1, "shirt", 3, 10);
+INSERT INTO clothing VALUES (2, "pants", 4, 20);
+INSERT INTO clothing VALUES (3, "dress", 3, 50);
+INSERT INTO clothing VALUES (4, "jacket", 5, 30);
+INSERT INTO clothing VALUES (5, "socks", 5, 5);
+
+SELECT *
+FROM clothing 
+WHERE prices  
+ORDER by prices asc 
